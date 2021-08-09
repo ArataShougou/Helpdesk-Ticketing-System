@@ -24,9 +24,9 @@
 				<a href="<?php  echo base_url('index.php/User');?>"><svg class="glyph stroked calendar"><use xlink:href="#stroked-male-user"/></svg> Pengguna
 				</a>
 			</li>
-			<li class="active">
+			<!-- <li class="active">
 				<a href="<?php echo base_url('index.php/Kategori');?>"><svg class="glyph stroked calendar"><use xlink:href="#stroked-app-window"></use></svg> Kategori</a>
-			</li>
+			</li> -->
 			<li class="active">
 				<a href="<?php echo base_url('index.php/Masalah');?>"><svg class="glyph stroked calendar"><use xlink:href="#stroked-app-window"></use></svg> Masalah</a>
 			</li>
