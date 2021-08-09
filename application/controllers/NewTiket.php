@@ -43,7 +43,7 @@ class NewTiket extends CI_controller
 			return 2;
 		}else if($bobot > 2 && $bobot <= 3){
 			return 3;
-		}else if($bobot > 0 && $bobot <= 2){
+		}else if($bobot >= 1 && $bobot <= 2){
 			return 4;
 		}
 	}
