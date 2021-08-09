@@ -73,6 +73,9 @@ class ListTiket extends CI_Controller
 		$no = 1;
 		foreach ($dataListTiket as $row) 
 		{
+			if(strlen($row["Masalah"]) > 20){
+				$row["Masalah"] = substr($row["Masalah"],0,20);
+			}
 			$pdf->Cell(10,6,$no,1,0,'C');
 			$pdf->Cell(30,6,$row["id_tiket"],1,0,'C');
 			$pdf->Cell(25,6,$row["pelapor"],1,0,'C');
