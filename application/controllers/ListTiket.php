@@ -53,15 +53,15 @@ class ListTiket extends CI_Controller
 		//membuat halaman baru
 		$pdf->AddPage();
 		$pdf->SetFont('Arial','B',16);
-		$pdf->Cell(190,7,'DAFTAR TIKET',0,1,'C');
+		$pdf->Cell(200,7,'DAFTAR TIKET',0,1,'C');
 		$pdf->Cell(10,7,'',0,1);
 		$pdf->SetFont('Arial','B',10);
 		$pdf->Cell(10,6,'NO',1,0,'C');
 		$pdf->Cell(30,6,'ID TIKET',1,0,'C');
 		$pdf->Cell(25,6,'PELAPOR',1,0,'C');
-		$pdf->Cell(35,6,'NAMA KATEGORI',1,0,'C');
+		$pdf->Cell(40,6,'MASALAH',1,0,'C');
 		$pdf->Cell(30,6,'SUBJEK',1,0,'C');
-		$pdf->Cell(30,6,'PRIORITAS',1,0,'C');
+		$pdf->Cell(30,6,'SLA',1,0,'C');
 		$pdf->Cell(30,6,'NAMA TEKNISI',1,1,'C');
 		$pdf->SetFont('Arial','',10);
 		if($this->session->userdata('level')=="ADMIN"){
@@ -76,7 +76,7 @@ class ListTiket extends CI_Controller
 			$pdf->Cell(10,6,$no,1,0,'C');
 			$pdf->Cell(30,6,$row["id_tiket"],1,0,'C');
 			$pdf->Cell(25,6,$row["pelapor"],1,0,'C');
-			$pdf->Cell(35,6,$row["nama_kategori"],1,0,'C');
+			$pdf->Cell(40,6,$row["Masalah"],1,0,'C');
 			$pdf->Cell(30,6,$row["subjek"],1,0,'C');
 			$pdf->Cell(30,6,$row["prioritas"],1,0,'C');
 			$pdf->Cell(30,6,$row["Nama"],1,1,'C');
