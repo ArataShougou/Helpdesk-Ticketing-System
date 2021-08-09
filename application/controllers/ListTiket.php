@@ -48,7 +48,7 @@ class ListTiket extends CI_Controller
 	}
 
 	function printListTiket(){
-		$user = $this->session->userdata('user');
+		$user= trim($this->session->userdata('nama'));
 		$pdf = new FPDF();
 		//membuat halaman baru
 		$pdf->AddPage();
