@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version 5.5.5-10.4.17-MariaDB)
-# Date: 2021-08-04 14:11:02
+# Date: 2021-08-09 09:09:31
 # Generator: MySQL-Front 6.0  (Build 2.20)
 
 
@@ -50,13 +50,13 @@ CREATE TABLE `masalah` (
   `Masalah` varchar(100) NOT NULL DEFAULT '',
   `Point` int(2) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id_masalah`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "masalah"
 #
 
-INSERT INTO `masalah` VALUES (4,'CPU ',10),(5,'Layar ',4),(7,'Keyboard ',3),(8,'Mouse ',3),(10,'Internet',5),(11,'installasi Software',4),(12,'OS',10);
+INSERT INTO `masalah` VALUES (1,'PC Sering Mati Tiba-Tiba',5),(2,'Bunyi Beep 3 kali,Beep terus 3 kali berturut',5),(3,'Printer Kantor Rusak',5),(4,'Gagal Booting',5),(5,'Komputer Tidak Terhubung Dengan Internet',5),(6,'Layar Bluescreen',5),(7,'Keyboard Tidak Berfungsi',3),(8,'Mouse Tidak Berfungsi',3),(9,'Installasi Software',4),(10,'USB Tidak Dapat Terdeteksi',4);
 
 #
 # Structure for table "pesanlog"
@@ -161,7 +161,7 @@ CREATE TABLE `ticket` (
 # Data for table "ticket"
 #
 
-INSERT INTO `ticket` VALUES ('T202107270001','Temi Duwi',4,'Layar bluescreen','sfdsf',1,'5',0,'2021-07-27 14:11:37','Teknisi1',NULL,0),('T202107270002','Temi Duwi',4,'Layar bluescreen','sdfsdf',2,'4',0,'2021-07-27 14:12:19',NULL,NULL,0),('T202107270003','Temi Duwi',7,'keyboard tidak berfiungsi','sdfsdf',2,'1',0,'2021-07-27 14:13:04',NULL,NULL,0),('T202107270004','Temi Duwi',7,'sdfsdf','sfsdfs',4,'5',0,'2021-07-27 14:13:59','Teknisi1',NULL,0),('T202107270005','Temi Duwi',4,'sdfsdf','sdfsdf',2,'6',18,'2021-07-27 14:21:00','Teknisi1',NULL,3);
+INSERT INTO `ticket` VALUES ('T202108090001','Temi Duwi',2,'','',2,'1',0,'2021-08-09 03:34:24',NULL,NULL,0),('T202108090002','Temi Duwi',4,'','',3,'1',0,'2021-08-09 03:35:31',NULL,NULL,0),('T202108090003','Temi Duwi',7,'','',4,'1',0,'2021-08-09 03:35:54',NULL,NULL,0),('T202108090004','Temi Duwi',1,'','',1,'1',0,'2021-08-09 03:36:50',NULL,NULL,0),('T202108090005','Temi Duwi',1,'','',2,'1',0,'2021-08-09 03:37:22',NULL,NULL,0),('T202108090006','Temi Duwi',1,'','',3,'1',0,'2021-08-09 03:37:44',NULL,NULL,0),('T202108090007','Temi Duwi',9,'','',NULL,'1',0,'2021-08-09 03:41:54',NULL,NULL,0);
 
 #
 # Structure for table "tracking"
@@ -175,10 +175,10 @@ CREATE TABLE `tracking` (
   `id_status` int(3) NOT NULL DEFAULT 0,
   `Oleh` char(50) DEFAULT NULL,
   PRIMARY KEY (`Id_tracking`,`id_tiket`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 #
 # Data for table "tracking"
 #
 
-INSERT INTO `tracking` VALUES (1,'T202107270001','2021-07-27  14:11:37',1,'User'),(2,'T202107270002','2021-07-27  14:12:19',1,'User'),(3,'T202107270003','2021-07-27  14:13:04',1,'User'),(4,'T202107270004','2021-07-27  14:13:59',1,'User'),(5,'T202107270004','2021-07-27  14:18:33',3,'Admin'),(6,'T202107270004','2021-07-27  14:18:33',4,'Admin'),(7,'T202107270002','2021-07-27  14:18:40',3,'Admin'),(8,'T202107270002','2021-07-27  14:18:40',4,'Admin'),(9,'T202107270001','2021-07-27  14:18:46',3,'Admin'),(10,'T202107270001','2021-07-27  14:18:46',4,'Admin'),(11,'T202107270005','2021-07-27  14:21:00',1,'User'),(12,'T202107270005','2021-07-27  14:21:31',3,'Admin'),(13,'T202107270005','2021-07-27  14:21:31',4,'Admin'),(14,'T202107270005','2021-07-27  14:24:05',5,'Admin'),(15,'T202107270004','2021-07-27  14:24:42',5,'Admin'),(16,'T202107270005','2021-07-30  04:10:00',8,'Teknisi1'),(17,'T202107270005','2021-07-30  04:59:18',0,'Teknisi1'),(18,'T202107270005','2021-07-30  04:59:55',6,'Teknisi1'),(19,'T202107270005','2021-07-30  05:02:15',0,'Teknisi1'),(20,'T202107270005','2021-07-30  05:04:15',0,'Teknisi1'),(21,'T202107270005','2021-07-30  05:05:15',6,'Teknisi1'),(22,'T202107270001','2021-07-30  05:27:44',5,'Admin');
+INSERT INTO `tracking` VALUES (1,'T202108090001','2021-08-09  03:34:24',1,'User'),(2,'T202108090002','2021-08-09  03:35:31',1,'User'),(3,'T202108090003','2021-08-09  03:35:54',1,'User'),(4,'T202108090004','2021-08-09  03:36:50',1,'User'),(5,'T202108090005','2021-08-09  03:37:22',1,'User'),(6,'T202108090006','2021-08-09  03:37:44',1,'User'),(7,'T202108090007','2021-08-09  03:41:54',1,'User');
