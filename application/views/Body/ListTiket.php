@@ -176,7 +176,9 @@ if ($this->session->userdata('level')=="ADMIN") { ?>
 				<ul class="list-group" id="teknisitiket">
 				</ul>
 				<div id='msg'></div>
-				<label >Pilih Teknisi</label>
+				<?php 
+				if ($this->session->userdata('level')=="ADMIN") {?>
+					<label >Pilih Teknisi</label>
 					<div  class="row" id="setTeknisi">
 						<div class="col-sm-9">
 							<?php echo form_dropdown('id_teknisi',$dd_teknisi," " , ' id="id_teknisi" required class="form-control" name="id_teknisi"'); ?>
@@ -185,6 +187,8 @@ if ($this->session->userdata('level')=="ADMIN") { ?>
 							<button id="teknisibtn" type="button" class="btn btn-primary">Update</button>
 						</div>
 					</div>
+				<?php }?>
+				
 				</br>
 				<?php 
 				if ($this->session->userdata('level')=="USER") {
