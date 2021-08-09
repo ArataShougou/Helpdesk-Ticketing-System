@@ -1,0 +1,42 @@
+/*All*/
+
+th{
+	text-align: left;
+}
+
+
+/*Form Tiket*/
+.panel{
+	position: relative;
+	margin-top: 30px;
+}
+
+
+/*label{
+	text-align: left;
+}*/
+
+.modal-header .close {
+   display: none;
+}
+
+.modal-header {
+ border-bottom: none;
+}
+
+.modal-footer {
+ border-top: none;
+}
+
+
+.modal-content {
+	position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0; 
+    outline: 0;
+  	box-shadow: none;
+}
+
