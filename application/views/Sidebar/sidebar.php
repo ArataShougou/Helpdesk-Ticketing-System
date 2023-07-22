@@ -9,7 +9,7 @@
 			</li>
 			<li class="active">
 				<a href="<?php echo base_url();?>index.php/ListTiket/AllTiket">
-					<svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Daftar Tiket <span class="badge badge-light"><?php if(empty($jml_list_ticket)) { echo "0"; }else{ echo( $jml_assigment_ticket_ticket);} ?> </span>
+					<svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Daftar Tiket <span class="badge badge-light"><?php if(empty($jml_list_ticket)) { echo "0"; }else{ echo( $jml_assigment_ticket);} ?> </span>
 				</a>
 			</li>
 			<li class="active">
